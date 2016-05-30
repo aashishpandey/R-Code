@@ -1,0 +1,14 @@
+# https://www.google.co.in/maps/dir/'36,-94'/45,-118/@39.8345637,-104.9981184,4.79z/data=!4m6!4m5!1m3!2m2!1d-94!2d36!1m0
+
+# Here is the code – 
+
+library(RCurl)
+library(jsonlite)
+
+curl <- getCurlHandle()
+curlSetOpt(.opts = list(proxy = '172.16.3.196:3128'), curl = curl)
+
+u = getURL("http://dev.virtualearth.net/REST/v1/Traffic/Incidents/36,-118,45,-94?key=AvXTJy5ipC5PykW6h4neA8vmMRtG5mi56GyNKXeOg5DlhfWKImsCqYA3SBIDtz2p", curl = curl)
+
+u1 = fromJSON(u)
+u1$resourceSets$resources

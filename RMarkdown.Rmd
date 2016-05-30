@@ -1,0 +1,84 @@
+---
+title: "0. Markdown"
+author: "Aashish Pandey"
+date: "26 February 2016"
+output: html_document
+---
+
+
+This Markdown was written for Python however it will work with R as well (Only Markdown)
+
+## insert a image in your page
+
+![](https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png)
+
+# Welcome to Python Workshop
+## Before moving to python part, we will see very brief capabilities of jupyter markdown 
+### In markdown # is used to define header, so single # will be first level header, ## will be second level header and so on. This text is written in third level header
+#### You can change the cell type from above dropdown from markdown to code for writing python code
+#### This is header level 5
+##### This is header level 6
+
+Alternative headings with ==
+=====
+
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+<u> Underline text with HTML u tag </u>
+
+### Lists
+- unordered item 1
+- unordered item 2
+ - unordered subitem 1
+ - unordered subitem 2
+- unordered item 3
+
+1. ordered item 1 
+2. ordered item 2 
+ 1. ordered sub item 1 
+ 2. ordered item 2
+3. ordered item 3 
+
+### LaTex 
+- Add:
+ - $x + y$
+- Subtract:
+ - $x - y$
+- Multiply
+ - $x * y$
+ - $x \times y$ 
+ - $x . y$ 
+- Divide
+ - $x / y$
+ - $x \div y$
+ - $\frac{x}{y}$
+- Relations
+    - $\pi \approx 3.14159$
+    - ${1 \over 0} \neq \inf$
+    - $0 < x > 1$
+    - $0 \leq x \geq 1$
+- Fractions
+    - $^1/_2$
+    - $\frac{1}{2x}$
+    - ${3 \over 4}$
+- Power & Index
+
+    - $f(x) = x^2 - x^{1 \over \pi}$
+
+    - $f(X,n) = X_n + X_{n-1}$
+
+Let's get summary of cars data set in R
+
+```{r}
+plot(cars)
+summary(cars)
+```
+Let's plot now
+
+```{r}
+plot(cars)
+```
